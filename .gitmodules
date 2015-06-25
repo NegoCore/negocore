@@ -1,0 +1,15 @@
+[submodule "kohana/system"]
+	path = kohana/system
+	url = https://github.com/kohana/core.git
+[submodule "kohana/modules/database"]
+	path = kohana/modules/database
+	url = https://github.com/kohana/database.git
+[submodule "kohana/modules/orm"]
+	path = kohana/modules/orm
+	url = https://github.com/kohana/orm.git
+[submodule "negocore/system"]
+	path = negocore/system
+	url = https://github.com/NegoCore/core.git
+[submodule "negocore/vendor/twig"]
+	path = negocore/vendor/twig
+	url = https://github.com/JNeutron/kohana-twig.git

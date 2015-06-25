@@ -1,0 +1,32 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+RewriteBase /
+
+# Protect hidden files from being viewed
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+# Dont list files in directory
+Options -Indexes
+
+# Allow access to module assets & webapp files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^modules/(.*)/(?:assets|webapp)\b.* - [L]
+
+# Allow access to application assets & webapp files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^application/(?:assets|webapp)\b.* - [L]
+
+# Protect files from being viewed
+RewriteRule ^(?:application|kohana|modules|negocore)\b.* index.php?/$0 [L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php?/$0 [PT]
