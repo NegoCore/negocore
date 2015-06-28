@@ -20,22 +20,6 @@
  */
 return array(
     /*
-     * Application Modules
-     */
-    'application' => array(
-        // Enable your application modules
-        // 'module_name' => MODPATH.'module_dir_name'
-    ),
-
-    /*
-     * NegoCore Modules
-     */
-    'negocore' => array(
-        // Enable NegoCore modules you will need in your application
-        // 'module_name' => NC_MODPATH.'module_dir_name'
-    ),
-
-    /*
      * Kohana Core Modules
      */
     'kohana' => array(
@@ -48,5 +32,21 @@ return array(
      */
     'vendor' => array(
         'twig' => NC_VENPATH.'twig', // Twig Module for views
+    ),
+
+    /*
+     * NegoCore Modules
+     */
+    'negocore' => array(
+        // Enable NegoCore modules you will need in your application
+        // 'module_name' => NC_MODPATH.'module_dir_name'
+    ),
+
+    /*
+     * Application Modules
+     */
+    'application' => array(
+        // Enable your application modules
+        // 'module_name' => MODPATH.'module_dir_name'
     )
 );
