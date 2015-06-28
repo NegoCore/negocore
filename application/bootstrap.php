@@ -42,9 +42,6 @@
     // Enable the auto-loader
     spl_autoload_register(array('Kohana', 'auto_load'));
 
-    // NegoCore auto-loader
-    spl_autoload_register(array('NegoCore', 'auto_load'));
-
     // Enable the Kohana auto-loader for unserialization.
     ini_set('unserialize_callback_func', 'spl_autoload_call');
 
