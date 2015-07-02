@@ -129,15 +129,15 @@
 
 /*
  * ------------------------------------------------------------
+ * Load default routes
+ * ------------------------------------------------------------
+ */
+    require APPPATH.'config'.DIRECTORY_SEPARATOR.'routes'.EXT;
+
+/*
+ * ------------------------------------------------------------
  * Load Modules
  * ------------------------------------------------------------
  */
     // Load all modules from config file
     Kohana::modules(Kohana::$config->load('modules')->as_array());
-
-/*
- * ------------------------------------------------------------
- * Load default routes
- * ------------------------------------------------------------
- */
-    require APPPATH.'config'.DIRECTORY_SEPARATOR.'routes'.EXT;
