@@ -26,9 +26,9 @@ return array(
     // WebApp Assets
     'js' => array(
         // Required
-        array('jquery', 'webapp/lib/jquery.min.js'),
-        array('require', 'webapp/lib/require.min.js'),
-        array('bootstrap', 'webapp/lib/bootstrap.min.js'),
+        array('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'),
+        array('require', '//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.18/require.min.js'),
+        array('bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js'),
 
         array('webapp-core', 'webapp/core.js'),
         array('webapp-init', 'webapp/init.js', array('jquery', 'require', 'webapp-core'))
