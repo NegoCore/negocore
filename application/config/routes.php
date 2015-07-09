@@ -21,7 +21,7 @@
  * Backend Route
  * ------------------------------------------------------------
  */
-    Route::set('backend', BACKEND_DIR_NAME.'(/<controller>(/<action>(/<id>)))', array())
+    Route::set('backend', BACKEND_DIR_NAME.'(/<controller>(/<action>(/<id>)))')
         ->defaults(array(
             'directory' => 'backend',
             'controller' => 'dashboard',
