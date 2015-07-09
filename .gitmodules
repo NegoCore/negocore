@@ -1,3 +1,6 @@
+[submodule "application/webapp/core"]
+	path = application/webapp/core
+	url = https://github.com/flightjs/flight.git
 [submodule "kohana/system"]
 	path = kohana/system
 	url = https://github.com/kohana/core.git
