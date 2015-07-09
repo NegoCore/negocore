@@ -20,14 +20,6 @@
  */
 return array(
     /*
-     * Kohana Core Modules
-     */
-    'kohana' => array(
-        'database' => KH_MODPATH.'database', // Used by ORM
-        'orm' => KH_MODPATH.'orm', // All apps will be developed with ORM technique,
-    ),
-
-    /*
      * Vendor Modules
      */
     'vendor' => array(
@@ -40,6 +32,14 @@ return array(
     'negocore' => array(
         // Enable NegoCore modules you will need in your application
         // 'module_name' => NC_MODPATH.'module_dir_name'
+    ),
+
+    /*
+     * Kohana Core Modules
+     */
+    'kohana' => array(
+        'database' => KH_MODPATH.'database', // Used by ORM
+        'orm' => KH_MODPATH.'orm', // All apps will be developed with ORM technique,
     ),
 
     /*
